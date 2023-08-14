@@ -32,7 +32,7 @@ type SectionProps = PropsWithChildren<{
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View style={styles.sectionContainer}>
+    <View className="mt-8 px-2">
       <Text
         style={[
           styles.sectionTitle,
